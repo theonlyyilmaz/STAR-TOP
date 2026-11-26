@@ -1,0 +1,72 @@
+Nov 23 13:32:47.930 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 23 13:32:47.930 HYPERVISOR: Started on IP = localhost, TCP port = 49784.
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips 
+Nov 23 13:32:48.446 GENERAL: working_dir=C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\73875296-f319-431a-a597-095956f13fe8 
+Nov 23 13:32:48.446 GENERAL: working_dir=C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\73875296-f319-431a-a597-095956f13fe8
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm create c3600 2 c3600 
+Nov 23 13:32:48.446 VM: VM c3600 created.
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm set_con_tcp_port c3600 5001 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: c3600 get_mac_addr c3600 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm set_exec_area c3600 64 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm set_idle_pc c3600 0x60672c68 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm set_ios c3600 C:/Users/YIlmaz/GNS3/images/IOS/c3640-ik9o3s-mz124-13.image 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: c3600 set_mac_addr c3600 cc02.0de8.0000 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm set_nvram c3600 256 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm set_ram c3600 192 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm slot_add_binding c3600 0 0 NM-1FE-TX 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm slot_add_binding c3600 1 0 NM-1FE-TX 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm slot_add_binding c3600 2 0 NM-1FE-TX 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:48.446 HYPERVISOR: exec_cmd: vm slot_add_binding c3600 3 0 NM-1FE-TX 
+Nov 23 13:32:53.477 HYPERVISOR: exec_cmd: nio create_udp udp-d976715b-be8d-40f7-8301-a4c199f4cee1 10002 127.0.0.1 10003 
+Nov 23 13:32:53.743 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3600 2 0 udp-d976715b-be8d-40f7-8301-a4c199f4cee1 
+Nov 23 13:32:53.743 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:54.399 HYPERVISOR: exec_cmd: nio create_udp udp-3b513ffe-e751-41c1-9464-df88f23fc0cf 10016 127.0.0.1 10017 
+Nov 23 13:32:54.399 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3600 3 0 udp-3b513ffe-e751-41c1-9464-df88f23fc0cf 
+Nov 23 13:32:54.399 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:54.462 HYPERVISOR: exec_cmd: nio create_udp udp-4272ee5e-b0cf-43a0-ad0d-0240fbd9c114 10020 127.0.0.1 10021 
+Nov 23 13:32:54.462 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3600 0 0 udp-4272ee5e-b0cf-43a0-ad0d-0240fbd9c114 
+Nov 23 13:32:54.462 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:32:55.805 HYPERVISOR: exec_cmd: nio create_udp udp-0b405d72-0d85-4300-bd26-9ccdc4c5b4c2 10046 127.0.0.1 10047 
+Nov 23 13:32:55.805 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3600 1 0 udp-0b405d72-0d85-4300-bd26-9ccdc4c5b4c2 
+Nov 23 13:32:55.805 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Nov 23 13:34:16.969 VM: VM Ghost created.
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/YIlmaz/GNS3/images/IOS/c3640-ik9o3s-mz124-13.image 
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\c3640-ik9o3s-mz124-13.image-192.ghost 
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 23 13:34:16.969 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 23 13:34:17.329 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 23 13:34:17.344 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 23 13:34:17.407 VM: VM Ghost shutdown.
+Nov 23 13:34:17.407 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 23 13:34:17.423 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 23 13:34:17.423 VM: VM Ghost destroyed.
+Nov 23 13:34:17.423 HYPERVISOR: exec_cmd: vm set_ghost_status c3600 2 
+Nov 23 13:34:17.423 HYPERVISOR: exec_cmd: vm set_ghost_file c3600 C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\c3640-ik9o3s-mz124-13.image-192.ghost 
+Nov 23 13:34:17.423 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm set_config c3600 configs\i2_startup-config.cfg 
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm start c3600 
+Nov 23 13:34:47.732 HYPERVISOR: exec_cmd: vm extract_config c3600 
+Nov 23 16:09:53.392 HYPERVISOR: exec_cmd: vm extract_config c3600 
+Nov 23 17:37:25.701 HYPERVISOR: exec_cmd: vm extract_config c3600 
+Nov 23 17:40:56.338 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 17:40:56.343 HYPERVISOR: exec_cmd: vm stop c3600 
+Nov 23 17:40:56.534 VM: VM c3600 shutdown.
+Nov 23 17:40:56.537 HYPERVISOR: exec_cmd: vm extract_config c3600 
+Nov 23 17:40:58.720 HYPERVISOR: exec_cmd: vm get_status c3600 
+Nov 23 17:40:58.722 HYPERVISOR: exec_cmd: vm extract_config c3600 
+Nov 23 17:40:58.727 HYPERVISOR: exec_cmd: vm delete c3600 
+Nov 23 17:40:58.727 VM: VM c3600 destroyed.
+Nov 23 17:40:58.732 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 23 17:40:59.124 HYPERVISOR: Stopped.
+Nov 23 17:40:59.124 GENERAL: reset done.

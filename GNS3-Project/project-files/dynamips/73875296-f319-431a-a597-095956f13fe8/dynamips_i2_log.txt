@@ -1,0 +1,72 @@
+Nov 23 13:32:47.352 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 23 13:32:47.352 HYPERVISOR: Started on IP = localhost, TCP port = 49781.
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips 
+Nov 23 13:32:47.868 GENERAL: working_dir=C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\eb7f833a-1314-4a18-b1a7-1cab0419523d 
+Nov 23 13:32:47.868 GENERAL: working_dir=C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\eb7f833a-1314-4a18-b1a7-1cab0419523d
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm create c3725-layer3switch 1 c3725 
+Nov 23 13:32:47.868 VM: VM c3725-layer3switch created.
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm set_con_tcp_port c3725-layer3switch 5000 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: c3725 get_mac_addr c3725-layer3switch 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm set_disk0 c3725-layer3switch 64 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm set_exec_area c3725-layer3switch 64 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm set_idle_pc c3725-layer3switch 0x602467a4 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm set_ios c3725-layer3switch C:/Users/YIlmaz/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: c3725 set_mac_addr c3725-layer3switch c201.1940.0000 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm set_nvram c3725-layer3switch 256 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 13:32:47.868 HYPERVISOR: exec_cmd: vm slot_add_binding c3725-layer3switch 1 0 NM-16ESW 
+Nov 23 13:32:54.555 HYPERVISOR: exec_cmd: nio create_udp udp-c9bad814-1d6f-4bb7-95fb-f9c17530195a 10026 127.0.0.1 10027 
+Nov 23 13:32:54.821 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3725-layer3switch 0 0 udp-c9bad814-1d6f-4bb7-95fb-f9c17530195a 
+Nov 23 13:32:54.821 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 13:32:56.993 HYPERVISOR: exec_cmd: nio create_udp udp-ce73702d-bced-4ee9-ad37-41580d7838ca 10090 127.0.0.1 10091 
+Nov 23 13:32:56.993 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3725-layer3switch 1 0 udp-ce73702d-bced-4ee9-ad37-41580d7838ca 
+Nov 23 13:32:56.993 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 13:32:57.071 HYPERVISOR: exec_cmd: nio create_udp udp-f9ebae54-0197-4072-8d2d-006635836f91 10094 127.0.0.1 10095 
+Nov 23 13:32:57.071 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3725-layer3switch 1 5 udp-f9ebae54-0197-4072-8d2d-006635836f91 
+Nov 23 13:32:57.071 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 13:32:57.134 HYPERVISOR: exec_cmd: nio create_udp udp-c6be876f-ea8f-4408-9639-fa744ecc5de7 10098 127.0.0.1 10099 
+Nov 23 13:32:57.134 HYPERVISOR: exec_cmd: vm slot_add_nio_binding c3725-layer3switch 1 10 udp-c6be876f-ea8f-4408-9639-fa744ecc5de7 
+Nov 23 13:32:57.134 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 13:34:17.423 HYPERVISOR: exec_cmd: vm create Ghost 0 c3725 
+Nov 23 13:34:17.423 VM: VM Ghost created.
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/YIlmaz/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost 
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Nov 23 13:34:17.438 HYPERVISOR: exec_cmd: vm start Ghost 
+Nov 23 13:34:17.844 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Nov 23 13:34:17.860 HYPERVISOR: exec_cmd: vm stop Ghost 
+Nov 23 13:34:18.048 VM: VM Ghost shutdown.
+Nov 23 13:34:18.048 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Nov 23 13:34:18.048 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Nov 23 13:34:18.048 VM: VM Ghost destroyed.
+Nov 23 13:34:18.063 HYPERVISOR: exec_cmd: vm set_ghost_status c3725-layer3switch 2 
+Nov 23 13:34:18.063 HYPERVISOR: exec_cmd: vm set_ghost_file c3725-layer3switch C:\Users\YIlmaz\GNS3\projects\STAR-TOP\project-files\dynamips\c3725-adventerprisek9-mz.124-25d.image-128.ghost 
+Nov 23 13:34:18.063 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 13:34:18.079 HYPERVISOR: exec_cmd: vm set_config c3725-layer3switch configs\i1_startup-config.cfg 
+Nov 23 13:34:18.079 HYPERVISOR: exec_cmd: vm start c3725-layer3switch 
+Nov 23 13:43:36.771 HYPERVISOR: exec_cmd: vm set_ios c3725-layer3switch C:/Users/YIlmaz/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Nov 23 13:43:38.149 HYPERVISOR: exec_cmd: vm set_ios c3725-layer3switch C:/Users/YIlmaz/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Nov 23 14:19:55.101 HYPERVISOR: exec_cmd: vm set_ios c3725-layer3switch C:/Users/YIlmaz/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Nov 23 14:28:21.724 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 14:28:21.734 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 14:29:51.769 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 14:29:51.782 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 15:17:35.672 HYPERVISOR: exec_cmd: vm set_ios c3725-layer3switch C:/Users/YIlmaz/GNS3/images/IOS/c3725-adventerprisek9-mz.124-25d.image 
+Nov 23 16:19:24.889 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 16:19:24.900 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 17:40:56.338 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 17:40:56.343 HYPERVISOR: exec_cmd: vm stop c3725-layer3switch 
+Nov 23 17:40:56.533 VM: VM c3725-layer3switch shutdown.
+Nov 23 17:40:56.534 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 17:40:58.390 HYPERVISOR: exec_cmd: vm get_status c3725-layer3switch 
+Nov 23 17:40:58.391 HYPERVISOR: exec_cmd: vm extract_config c3725-layer3switch 
+Nov 23 17:40:58.393 HYPERVISOR: exec_cmd: vm delete c3725-layer3switch 
+Nov 23 17:40:58.393 VM: VM c3725-layer3switch destroyed.
+Nov 23 17:40:58.394 HYPERVISOR: exec_cmd: hypervisor stop 
+Nov 23 17:40:58.613 HYPERVISOR: Stopped.
+Nov 23 17:40:58.613 GENERAL: reset done.
